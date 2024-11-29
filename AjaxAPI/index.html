@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="btnGetData">Get data via AJAX</button>
+        <button id="btnClear">Clear</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Sku</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <script>
+        $(function() {
+            $('#btnGetData').on('click', function() {
+                $('#tableBody').empty();
+
+                $.ajax({
+                    url: "http://localhost:3000/store",
+                    type: "GET",
+                    success: function(response) {
+                        response.forEach(item => {
+                            let newRow = $('<tr>');
+                            
+                            newRow.append($('<td>').html(`<img src="${item.image}" alt="Product Image" width="50">`));
+                            newRow.append($('<td>').text(item.sku));
+                            newRow.append($('<td>').text(item.name));
+                            newRow.append($('<td>').text(`$${item.price.toFixed(2)}`));
+                            newRow.append($('<td>').text(item.rating));
+                            
+                            $('#tableBody').append(newRow);
+                        });
+                    },
+                    error: function(err) {
+                        console.error("Error fetching data:", err);
+                        alert("Failed to fetch data. Please check the server.");
+                    }
+                });
+            });
+
+            $('#btnClear').on('click', function() {
+                $('#tableBody').empty();
+            });
+        });
+    </script>
+</body>
+</html>

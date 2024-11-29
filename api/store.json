@@ -1,0 +1,53 @@
+{
+    "store": [
+        {
+            "image": "https://www.klayuk.co.uk/cdn/shop/products/NIKE-AIR-MAX-95-OG-NEON-Crepslocker-Front.webp?v=1674563834&width=2048",
+            "sku": "88400001",
+            "name": "Nike Air Max 95 Og Neon",
+            "price": 190,
+            "rating": 4.7
+        },
+        {
+            "image": "https://i5.walmartimages.com/asr/29df9f15-f39c-4b14-9c76-acd226c71b41.fcc0eb26220c3eba5376fdf53703dbdd.jpeg",
+            "sku": "88400002",
+            "name": "Nike Air Jordan 1 High OG UNC",
+            "price": 330,
+            "rating": 4.7
+        },
+        {
+            "image": "https://atmos.co.id/cdn/shop/files/AtmosCleanBg_94_1360x.png?v=1721493045",
+            "sku": "88400003",
+            "name": "NIKE AIR JORDAN 1 MID",
+            "price": 290,
+            "rating": 4.9
+        },
+        {
+            "image": "https://5.imimg.com/data5/DS/VF/DC/ANDROID-19051907/product-jpeg-500x500.jpg",
+            "sku": "88400004",
+            "name": "Black Mesh Adidas",
+            "price": 490,
+            "rating": 4.9
+        },
+        {
+            "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/5bf08ad3b4ff4ed0b2ffaafc0160c604_9366/superstar-shoes.jpg",
+            "sku": "88400005",
+            "name": "adidas Classic Sneakers",
+            "price": 210,
+            "rating": 4.7
+        },
+        {
+            "image": "https://affinity.com.pk/cdn/shop/products/image_8c33f963-eaf3-45c2-b0df-86cc62ed3ee8_2048x.heic?v=1659053245",
+            "sku": "88400006",
+            "name": "Adidas EQ21 Run Shoes",
+            "price": 190,
+            "rating": 4.7
+        },
+        {
+            "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/2674c83050894d75a9aead0a013f2e2f_9366/EQ21_Run_Shoes_Black_H00512_01_standard.jpg",
+            "sku": "88400007",
+            "name": "adidas EQ21 Run Shoes ",
+            "price": 190,
+            "rating": 4.7
+        }
+    ]
+}
